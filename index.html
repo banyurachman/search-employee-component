@@ -7,6 +7,7 @@ banyurachman95@gmail.com
 -->
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,35 +16,166 @@ banyurachman95@gmail.com
     <!-- Here is the favicon that you put on img folder -->
     <link rel="icon" type="image/png" href="img/favicon.png">
     <!-- Here is the Semantic UI's CSS CDN. You can change it by the other framework like Bootstrap or even remove it. -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet"> -->
     <!-- Here is your custom CSS that you put on css folder -->
     <link href="css/style.css" rel="stylesheet">
     <!-- Here is jQuery CDN. You can change it or even remove it. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Here is the Semantic UI's JS CDN. You can change it by the other framework like Bootstrap or even remove it. -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script> -->
     <!-- Here is the JS script for Google Analytics that you put on js folder. You can remove it if you don't need it -->
     <script src="js/analytics.js"></script>
 
     <!-- Here is the title of the page -->
-    <title>Page Title</title>
+    <title>Search Employee Component</title>
 </head>
 
 <body>
-    <div id="mainSegment" class="ui vertical stripe segment">
-        <div class="ui text container">
-            <div class="ui middle aligned center aligned stackable grid">
-                <div class="row">
-                    <div class="ui sixteen wide column">
-                        <h1>Getting Started!</h1>
-                        <div class="ui hidden divider"></div>
-                        <p>
-                            by
-                            <a href="https://banyurachman.com" target="_blank">Banyu Rachman</a>
-                        </p>
-                    </div>
+    <div id="component-wrapper">
+        <div class="component-header">
+            <input type="text" placeholder="search employee...">
+            <div class="close" hidden></div>
+            <div class="found"></div>
+        </div>
+        <div class="component-content">
+            <a class="employee-data-container" href="#">
+                <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Employee Photo">
+                <div>
+                    <h3>Luhung Banawi Hutagalung</h3>
+                    <p>Designer</p>
+                    <p>Jakarta</p>
+                    <p>XYZ-2031430</p>
                 </div>
-            </div>
+            </a>
+            <a class="employee-data-container" href="#">
+                <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="Employee Photo">
+                <div>
+                    <h3>Langgeng Pradipta</h3>
+                    <p>Developer</p>
+                    <p>Surabaya</p>
+                    <p>XYZ-2033467</p>
+                </div>
+            </a>
+            <a class="employee-data-container" href="#">
+                <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="Employee Photo">
+                <div>
+                    <h3>Raditya Maryanto Budiyanto</h3>
+                    <p>Analyst</p>
+                    <p>Jakarta</p>
+                    <p>XYZ-2038718</p>
+                </div>
+            </a>
+            <a class="employee-data-container" href="#">
+                <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="Employee Photo">
+                <div>
+                    <h3>Rizki Jais Siregar</h3>
+                    <p>Analyst</p>
+                    <p>Jakarta</p>
+                    <p>XYZ-2039098</p>
+                </div>
+            </a>
+            <a class="employee-data-container" href="#">
+                <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Employee Photo">
+                <div>
+                    <h3>Rahman Damanik</h3>
+                    <p>Designer</p>
+                    <p>Jakarta</p>
+                    <p>XYZ-2030135</p>
+                </div>
+            </a>
+            <a class="employee-data-container" href="#">
+                <img src="https://randomuser.me/api/portraits/men/16.jpg" alt="Employee Photo">
+                <div>
+                    <h3>Imam Setiawan M.TI.</h3>
+                    <p>Developer</p>
+                    <p>Bandung</p>
+                    <p>XYZ-2037119</p>
+                </div>
+            </a>
+            <a class="employee-data-container" href="#">
+                <img src="https://randomuser.me/api/portraits/men/17.jpg" alt="Employee Photo">
+                <div>
+                    <h3>Martani Nashiruddin</h3>
+                    <p>Developer</p>
+                    <p>Jakarta</p>
+                    <p>XYZ-2037708</p>
+                </div>
+            </a>
+            <a class="employee-data-container" href="#">
+                <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="Employee Photo">
+                <div>
+                    <h3>Himawan Tarihoran</h3>
+                    <p>Developer</p>
+                    <p>Bandung</p>
+                    <p>XYZ-2038742</p>
+                </div>
+            </a>
+            <a class="employee-data-container" href="#">
+                <img src="https://randomuser.me/api/portraits/men/19.jpg" alt="Employee Photo">
+                <div>
+                    <h3>Rafid Luhung Kusumo</h3>
+                    <p>Developer</p>
+                    <p>Jakarta</p>
+                    <p>XYZ-2035590</p>
+                </div>
+            </a>
+            <a class="employee-data-container" href="#">
+                <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="Employee Photo">
+                <div>
+                    <h3>Ricky Sutaji</h3>
+                    <p>Designer</p>
+                    <p>Jakarta</p>
+                    <p>XYZ-2035531</p>
+                </div>
+            </a>
+            <a class="employee-data-container" href="#">
+                <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="Employee Photo">
+                <div>
+                    <h3>Rayhan Maditra</h3>
+                    <p>Developer</p>
+                    <p>Surabaya</p>
+                    <p>XYZ-2035532</p>
+                </div>
+            </a>
+            <a class="employee-data-container" href="#">
+                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Employee Photo">
+                <div>
+                    <h3>Andra Sadewa Kuna</h3>
+                    <p>Developer</p>
+                    <p>Jakarta</p>
+                    <p>XYZ-2035533</p>
+                </div>
+            </a>
+            <a class="employee-data-container" href="#">
+                <img src="https://randomuser.me/api/portraits/men/23.jpg" alt="Employee Photo">
+                <div>
+                    <h3>Roy Saputra Angin</h3>
+                    <p>Designer</p>
+                    <p>Jakarta</p>
+                    <p>XYZ-2035534</p>
+                </div>
+            </a>
+            <a class="employee-data-container" href="#">
+                <img src="https://randomuser.me/api/portraits/men/24.jpg" alt="Employee Photo">
+                <div>
+                    <h3>Muhammad Kinan</h3>
+                    <p>Analyst</p>
+                    <p>Bandung</p>
+                    <p>XYZ-2035535</p>
+                </div>
+            </a>
+            <a class="employee-data-container" href="#">
+                <img src="https://randomuser.me/api/portraits/men/25.jpg" alt="Employee Photo">
+                <div>
+                    <h3>Mitra Ramadhan Putra</h3>
+                    <p>Developer</p>
+                    <p>Bandung</p>
+                    <p>XYZ-2035536</p>
+                </div>
+            </a>
+        </div>
+        <div class="empty" hidden>
+            <h3>Nothing :(</h3>
         </div>
     </div>
 </body>

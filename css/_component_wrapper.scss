@@ -1,0 +1,173 @@
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #444444;
+}
+
+#component-wrapper{
+    width: 400px;
+    border: 1px #eeeeee solid;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 4px 30px 10px rgba(0, 0, 0, 0.03);
+
+    .component-header{
+        padding: 1em;
+
+        input[type=text]{
+            border: 0;
+            font-size: 16px;
+            font-weight: 300;
+            border-bottom: 1px #ffffff solid;
+            width: calc(100% - 1.7em);
+            display: block;
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #444444;
+            padding: .5em;
+            padding-right: 1em;
+
+            &::placeholder{
+                color: #888888;
+            }
+
+            &:focus{
+                outline: none;
+                border-bottom: 1px #eeeeee solid;
+            }
+        }
+
+        .found{
+            padding: 0 .5em;
+            font-size: 12px;
+            color: #bbbbbb;
+            font-weight: 600;
+            padding-top: 1em;
+        }
+
+        .close {
+            position: absolute;
+            right: 1.5em;
+            top: 1.5em;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+
+                &:before,
+                &:after {
+                    background-color: #888888;
+                }
+            }
+
+            &:before,
+            &:after {
+                position: absolute;
+                left: 15px;
+                content: ' ';
+                height: 16px;
+                width: 2px;
+                background-color: #bbbbbb;
+            }
+
+            &:before {
+                transform: rotate(45deg);
+            }
+
+            &:after {
+                transform: rotate(-45deg);
+            }
+        }
+
+    }
+
+    .component-content {
+        height: 500px;
+        overflow: auto;
+        font-family: 'Montserrat', sans-serif;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+        }
+
+        .employee-data-container {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            column-gap: 1em;
+            // border-top: 1px #f8f8f8 solid;
+            padding: 1em;
+            text-decoration: none;
+
+            &:hover{
+                background: #f8f8f8;
+            }
+
+            img{
+                height: 66px;
+                width: 66px;
+                object-fit: cover;
+                border-radius: 100%;
+            }
+
+            h3{
+                margin-top: .15em;
+                margin-bottom: .35em;
+                font-size: 16px;
+                color: #444444;
+            }
+
+            p{
+                display: inline;
+                margin: 0;
+                font-size: 14px;
+                color: #888888;
+
+                &:nth-last-child(3)::after{
+                    content:"\A";
+                    width:5px;
+                    height:5px;
+                    border-radius:50%;
+                    background: #dddddd;
+                    display:inline-block;
+                    margin:0 5px 0 8px;
+                    transform: translateY(-2px);
+                }
+
+                &:last-child {
+                    display: block;
+                    font-size: 12px;
+                    margin-top: .25em;
+                    color: #bbbbbb;
+                    font-weight: 600;
+                    font-family: 'Source Sans Pro', sans-serif;
+                }
+            }
+        }
+    }
+
+    .empty {
+        height: 500px;
+        width: 100%;
+        display: grid;
+        position: absolute;
+        bottom: 0;
+        place-items: center;
+
+        font-family: 'Montserrat', sans-serif;
+        color: #888888;
+    }
+}
